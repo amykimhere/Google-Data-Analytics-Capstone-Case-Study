@@ -52,6 +52,7 @@ BigQuery is used to combine the various datasets into one dataset and clean it.
 
 ### Data Types Changing
 SQL Query: [Data Types Changing](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/01.%20Data%20Types%20Changing.sql)
+
 Data from **April 2020 to December 2020** have different data types for the start_station_id and end_station_id columns. Therefore, I need to change their data type from integer to string to ensure consistency with the rest of the table by using BigQuery.
 
 ### Data Combining
@@ -100,6 +101,7 @@ There are 209 duplicate rows with the same ride_id that need to be filtered to s
 
 ### Data Cleaning
 SQL Query:  [Data Cleaning](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/04.%20Data%20Cleaning.sql)
+
 1. All the rows having missing values are deleted.
 
 2. Three columns ride_length for duration of the trip, day_of_week and month are added.
@@ -110,6 +112,7 @@ SQL Query:  [Data Cleaning](https://github.com/amykimhere/Google-Data-Analytics-
 
 ## Analyze & Share
 SQL Query: [Data Analysis](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/05.%20Data%20Analysis.sql)
+
 Data Visualization: [Tableau](https://public.tableau.com/views/cyclistic-trip-data/TripsatEndingStation?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.

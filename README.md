@@ -6,10 +6,11 @@ I am a junior data analyst on the marketing analytics team at Cyclistic, a bike-
 Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 01/06/2024]
 
 SQL Queries:
-01. Data Combing
-02. Data Exploration
-03. Data Cleaning
-04. Data Analysis
+01. [Data Types Changing](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/01.%20Data%20Types%20Changing.sql)
+02. [Data Combining](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/02.%20Data%20Combining.sql)
+03. [Data Exploration](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/03.%20Data%20Exploration.sql)
+04. [Data Cleaning](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/04.%20Data%20Cleaning.sql)
+05. [Data Analysis](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/05.%20Data%20Analysis.sql)
 
 Data Visualizations: [Tableau](https://public.tableau.com/views/cyclistic-trip-data/TripsatEndingStation?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 ## Background
@@ -50,12 +51,14 @@ BigQuery is used to combine the various datasets into one dataset and clean it.
 **Reason:** A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inability to manage large amounts of data. Because the Cyclistic dataset has more than 5.6 million rows, it is essential to use a platform like BigQuery that supports huge volumes of data.
 
 ### Data Types Changing
+SQL Query: [Data Types Changing](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/01.%20Data%20Types%20Changing.sql)
 Data from **April 2020 to December 2020** have different data types for the start_station_id and end_station_id columns. Therefore, I need to change their data type from integer to string to ensure consistency with the rest of the table by using BigQuery.
 
 ### Data Combining
 48 csv files are combined into a file containing **21,182,202 rows** of data for the **4 consecutive years**. I used BigQuery to combine all the tables together.
+
 ### Data Exploration
-SQL Query: Data Exploration
+SQL Query: [Data Exploration](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/03.%20Data%20Exploration.sql)
 
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.
 
@@ -96,6 +99,7 @@ There are 209 duplicate rows with the same ride_id that need to be filtered to s
 11. Columns that need to be removed are start_station_id and end_station_id as they do not add value to analysis of our current problem. Longitude and latitude location columns may not be used in analysis but can be used to visualize a map.
 
 ### Data Cleaning
+SQL Query:  [Data Cleaning](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/04.%20Data%20Cleaning.sql)
 1. All the rows having missing values are deleted.
 
 2. Three columns ride_length for duration of the trip, day_of_week and month are added.
@@ -105,6 +109,7 @@ There are 209 duplicate rows with the same ride_id that need to be filtered to s
 4. Total **4,396,662 rows** (21,182,202 - 16,785,540) are removed in this step.
 
 ## Analyze & Share
+SQL Query: [Data Analysis](https://github.com/amykimhere/Google-Data-Analytics-Capstone-Case-Study/blob/main/05.%20Data%20Analysis.sql)
 Data Visualization: [Tableau](https://public.tableau.com/views/cyclistic-trip-data/TripsatEndingStation?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.

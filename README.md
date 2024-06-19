@@ -168,5 +168,6 @@ Based on the identified differences between casual and member riders, here are s
 - Promotions for Longer Rides: Casual riders tend to use bikes for longer durations compared to members. Offer incentives such as discounts for longer rides or rewards for accumulated ride time. This approach can appeal to casual riders looking for cost-effective ways and entice members to enjoy extended bike trips.
 
 By aligning marketing efforts with the preferences and behavior patterns of casual riders, these strategies aim to effectively attract them to become regular members of the bike-sharing service.
-### Reference: As a junior data analytics learner, I would like to thank the author below for guiding me through this case study.
+### Reference: 
+As a junior data analytics learner, I would like to extend my heartfelt thanks to the author below for their invaluable guidance throughout this case study.
 - https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study 
